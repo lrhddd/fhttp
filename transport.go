@@ -14,7 +14,7 @@ import (
 
 	"container/list"
 	"context"
-	"crypto/tls"
+	tls "github.com/refraction-networking/utls"
 	"errors"
 	"fmt"
 	"io"

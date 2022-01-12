@@ -18,7 +18,7 @@ package http2
 
 import (
 	"bufio"
-	"crypto/tls"
+	tls "github.com/refraction-networking/utls"
 	"fmt"
 	"io"
 	"os"

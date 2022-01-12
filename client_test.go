@@ -9,7 +9,7 @@ package http_test
 import (
 	"bytes"
 	"context"
-	"crypto/tls"
+	tls "github.com/refraction-networking/utls"
 	"encoding/base64"
 	"errors"
 	"fmt"

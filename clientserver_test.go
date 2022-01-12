@@ -11,7 +11,7 @@ import (
 	"compress/gzip"
 	"crypto/rand"
 	"crypto/sha1"
-	"crypto/tls"
+	tls "github.com/refraction-networking/utls"
 	"fmt"
 	"hash"
 	"io"

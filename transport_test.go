@@ -15,7 +15,7 @@ import (
 	"compress/gzip"
 	"context"
 	"crypto/rand"
-	"crypto/tls"
+	tls "github.com/refraction-networking/utls"
 	"crypto/x509"
 	"encoding/binary"
 	"errors"

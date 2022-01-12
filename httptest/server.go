@@ -7,7 +7,7 @@
 package httptest
 
 import (
-	"crypto/tls"
+	tls "github.com/refraction-networking/utls"
 	"crypto/x509"
 	"flag"
 	"fmt"

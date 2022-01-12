@@ -22,7 +22,7 @@ package main
 import (
 	"bufio"
 	"bytes"
-	"crypto/tls"
+	tls "github.com/refraction-networking/utls"
 	"errors"
 	"flag"
 	"fmt"

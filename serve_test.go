@@ -12,7 +12,7 @@ import (
 	"compress/gzip"
 	"compress/zlib"
 	"context"
-	"crypto/tls"
+	tls "github.com/refraction-networking/utls"
 	"encoding/json"
 	"errors"
 	"fmt"

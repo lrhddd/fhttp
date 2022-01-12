@@ -7,7 +7,7 @@ package main
 import (
 	"bytes"
 	"context"
-	"crypto/tls"
+	tls "github.com/refraction-networking/utls"
 	"flag"
 	"fmt"
 	"hash/crc32"

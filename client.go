@@ -11,7 +11,7 @@ package http
 
 import (
 	"context"
-	"crypto/tls"
+	tls "github.com/refraction-networking/utls"
 	"encoding/base64"
 	"errors"
 	"fmt"
