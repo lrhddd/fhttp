@@ -2,12 +2,12 @@ package http2_test
 
 import (
 	"bytes"
-	tls "github.com/refraction-networking/utls"
 	"crypto/x509"
 	"errors"
 	"fmt"
-	"github.com/Carcraftz/fhttp/cookiejar"
-	"github.com/Carcraftz/fhttp/httptest"
+	"github.com/lrhddd/fhttp/cookiejar"
+	"github.com/lrhddd/fhttp/httptest"
+	tls "github.com/refraction-networking/utls"
 	"golang.org/x/net/publicsuffix"
 	"log"
 	ghttp "net/http"
@@ -16,8 +16,8 @@ import (
 	"strings"
 	"testing"
 
-	http "github.com/Carcraftz/fhttp"
-	"github.com/Carcraftz/fhttp/http2"
+	http "github.com/lrhddd/fhttp"
+	"github.com/lrhddd/fhttp/http2"
 )
 
 // Tests if connection settings are written correctly

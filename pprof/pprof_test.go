@@ -16,9 +16,9 @@ import (
 	"testing"
 	"time"
 
-	http "github.com/Carcraftz/fhttp"
-	"github.com/Carcraftz/fhttp/httptest"
-	"github.com/Carcraftz/fhttp/internal/profile"
+	http "github.com/lrhddd/fhttp"
+	"github.com/lrhddd/fhttp/httptest"
+	"github.com/lrhddd/fhttp/internal/profile"
 )
 
 // TestDescriptions checks that the profile names under runtime/pprof package

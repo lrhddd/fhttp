@@ -14,9 +14,9 @@ import (
 
 	"container/list"
 	"context"
-	tls "github.com/refraction-networking/utls"
 	"errors"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"io"
 	"log"
 	"net"
@@ -29,7 +29,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Carcraftz/fhttp/httptrace"
+	"github.com/lrhddd/fhttp/httptrace"
 
 	"golang.org/x/net/http/httpguts"
 	"golang.org/x/net/http/httpproxy"

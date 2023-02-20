@@ -1,9 +1,9 @@
-module github.com/Carcraftz/fhttp
+module github.com/lrhddd/fhttp
 
 go 1.16
 
 require (
-	github.com/andybalholm/brotli v1.0.3
-	golang.org/x/net v0.0.0-20210610132358-84b48f89b13b
-	golang.org/x/term v0.0.0-20210615171337-6886f2dfbf5b
+	github.com/refraction-networking/utls v1.2.2
+	golang.org/x/net v0.5.0
+	golang.org/x/term v0.4.0
 )

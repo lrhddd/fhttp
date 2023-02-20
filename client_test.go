@@ -9,10 +9,10 @@ package http_test
 import (
 	"bytes"
 	"context"
-	tls "github.com/refraction-networking/utls"
 	"encoding/base64"
 	"errors"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"io"
 	"log"
 	"net"
@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/Carcraftz/fhttp"
-	"github.com/Carcraftz/fhttp/cookiejar"
-	"github.com/Carcraftz/fhttp/httptest"
+	. "github.com/lrhddd/fhttp"
+	"github.com/lrhddd/fhttp/cookiejar"
+	"github.com/lrhddd/fhttp/httptest"
 )
 
 var robotsTxtHandler = HandlerFunc(func(w ResponseWriter, r *Request) {

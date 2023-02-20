@@ -8,12 +8,12 @@ import (
 	"bufio"
 	"bytes"
 	"context"
-	tls "github.com/refraction-networking/utls"
 	"crypto/x509"
 	"encoding/pem"
 	"errors"
 	"flag"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"io"
 	"io/ioutil"
 	"log"
@@ -32,10 +32,10 @@ import (
 	"testing"
 	"time"
 
-	http "github.com/Carcraftz/fhttp"
-	"github.com/Carcraftz/fhttp/http2/hpack"
-	"github.com/Carcraftz/fhttp/httptest"
-	"github.com/Carcraftz/fhttp/httptrace"
+	http "github.com/lrhddd/fhttp"
+	"github.com/lrhddd/fhttp/http2/hpack"
+	"github.com/lrhddd/fhttp/httptest"
+	"github.com/lrhddd/fhttp/httptrace"
 )
 
 var (

@@ -8,16 +8,16 @@ package http
 
 import (
 	"bytes"
-	tls "github.com/refraction-networking/utls"
 	"errors"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"io"
 	"io/ioutil"
 	"net"
 	"strings"
 	"testing"
 
-	"github.com/Carcraftz/fhttp/internal"
+	"github.com/lrhddd/fhttp/internal"
 )
 
 // Issue 15446: incorrect wrapping of errors when server closes an idle connection.

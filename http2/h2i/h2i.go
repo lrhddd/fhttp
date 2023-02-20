@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build aix || darwin || dragonfly || freebsd || linux || netbsd || openbsd || solaris || windows
 // +build aix darwin dragonfly freebsd linux netbsd openbsd solaris windows
 
 /*
@@ -22,10 +23,10 @@ package main
 import (
 	"bufio"
 	"bytes"
-	tls "github.com/refraction-networking/utls"
 	"errors"
 	"flag"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"io"
 	"log"
 	"net"
@@ -35,8 +36,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Carcraftz/fhttp/http2"
-	"github.com/Carcraftz/fhttp/http2/hpack"
+	"github.com/lrhddd/fhttp/http2"
+	"github.com/lrhddd/fhttp/http2/hpack"
 	"golang.org/x/term"
 )
 

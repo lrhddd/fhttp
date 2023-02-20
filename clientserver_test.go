@@ -11,8 +11,8 @@ import (
 	"compress/gzip"
 	"crypto/rand"
 	"crypto/sha1"
-	tls "github.com/refraction-networking/utls"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"hash"
 	"io"
 	"log"
@@ -28,9 +28,9 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/Carcraftz/fhttp"
-	"github.com/Carcraftz/fhttp/httptest"
-	"github.com/Carcraftz/fhttp/httputil"
+	. "github.com/lrhddd/fhttp"
+	"github.com/lrhddd/fhttp/httptest"
+	"github.com/lrhddd/fhttp/httputil"
 )
 
 type clientServerTest struct {

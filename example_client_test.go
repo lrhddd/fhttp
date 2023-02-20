@@ -1,19 +1,19 @@
 package http_test
 
 import (
-	tls "github.com/refraction-networking/utls"
 	"crypto/x509"
 	"encoding/json"
 	"flag"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"io"
 	"net/url"
 	"os"
 	"strings"
 	"testing"
 
-	http "github.com/Carcraftz/fhttp"
-	"github.com/Carcraftz/fhttp/http2"
+	http "github.com/lrhddd/fhttp"
+	"github.com/lrhddd/fhttp/http2"
 )
 
 // Basic http test with Header Order + enable push

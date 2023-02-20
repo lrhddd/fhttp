@@ -7,10 +7,10 @@
 package httptest
 
 import (
-	tls "github.com/refraction-networking/utls"
 	"crypto/x509"
 	"flag"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"log"
 	"net"
 	"os"
@@ -18,8 +18,8 @@ import (
 	"sync"
 	"time"
 
-	http "github.com/Carcraftz/fhttp"
-	"github.com/Carcraftz/fhttp/internal"
+	http "github.com/lrhddd/fhttp"
+	"github.com/lrhddd/fhttp/internal"
 )
 
 // A Server is an HTTP server listening on a system-chosen port on the

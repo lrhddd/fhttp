@@ -9,10 +9,10 @@ import (
 	"compress/gzip"
 	"compress/zlib"
 	"context"
-	tls "github.com/refraction-networking/utls"
 	"errors"
 	"flag"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"io"
 	"io/ioutil"
 	"log"
@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	http "github.com/Carcraftz/fhttp"
-	"github.com/Carcraftz/fhttp/httptest"
+	http "github.com/lrhddd/fhttp"
+	"github.com/lrhddd/fhttp/httptest"
 
 	"golang.org/x/net/http2/hpack"
 )

@@ -10,10 +10,10 @@ import (
 	"bufio"
 	"bytes"
 	"context"
-	tls "github.com/refraction-networking/utls"
 	"encoding/base64"
 	"errors"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"io"
 	"mime"
 	"mime/multipart"
@@ -25,7 +25,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Carcraftz/fhttp/httptrace"
+	"github.com/lrhddd/fhttp/httptrace"
 
 	"golang.org/x/net/idna"
 )

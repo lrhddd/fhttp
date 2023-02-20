@@ -18,8 +18,8 @@ package http2
 
 import (
 	"bufio"
-	tls "github.com/refraction-networking/utls"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"io"
 	"os"
 	"sort"
@@ -27,7 +27,7 @@ import (
 	"strings"
 	"sync"
 
-	http "github.com/Carcraftz/fhttp"
+	http "github.com/lrhddd/fhttp"
 
 	"golang.org/x/net/http/httpguts"
 )

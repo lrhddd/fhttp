@@ -29,9 +29,9 @@ import (
 	"bufio"
 	"bytes"
 	"context"
-	tls "github.com/refraction-networking/utls"
 	"errors"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"io"
 	"log"
 	"math"
@@ -46,8 +46,8 @@ import (
 	"sync"
 	"time"
 
-	http "github.com/Carcraftz/fhttp"
-	"github.com/Carcraftz/fhttp/http2/hpack"
+	http "github.com/lrhddd/fhttp"
+	"github.com/lrhddd/fhttp/http2/hpack"
 
 	"golang.org/x/net/http/httpguts"
 )

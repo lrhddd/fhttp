@@ -12,10 +12,10 @@ import (
 	"compress/gzip"
 	"compress/zlib"
 	"context"
-	tls "github.com/refraction-networking/utls"
 	"encoding/json"
 	"errors"
 	"fmt"
+	tls "github.com/refraction-networking/utls"
 	"io"
 	"log"
 	"math/rand"
@@ -36,11 +36,11 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/Carcraftz/fhttp"
-	"github.com/Carcraftz/fhttp/httptest"
-	"github.com/Carcraftz/fhttp/httputil"
-	"github.com/Carcraftz/fhttp/internal"
-	"github.com/Carcraftz/fhttp/internal/testenv"
+	. "github.com/lrhddd/fhttp"
+	"github.com/lrhddd/fhttp/httptest"
+	"github.com/lrhddd/fhttp/httputil"
+	"github.com/lrhddd/fhttp/internal"
+	"github.com/lrhddd/fhttp/internal/testenv"
 )
 
 type dummyAddr string
