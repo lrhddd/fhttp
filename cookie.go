@@ -5,7 +5,6 @@
 package http
 
 import (
-	"log"
 	"net"
 	"net/textproto"
 	"strconv"
@@ -198,7 +197,7 @@ func (c *Cookie) String() string {
 			b.WriteString("; Domain=")
 			b.WriteString(d)
 		} else {
-			log.Printf("net/http: invalid Cookie.Domain %q; dropping domain attribute", c.Domain)
+			//log.Printf("net/http: invalid Cookie.Domain %q; dropping domain attribute", c.Domain)
 		}
 	}
 	var buf [len(TimeFormat)]byte
@@ -358,9 +357,11 @@ func sanitizeCookieName(n string) string {
 // https://tools.ietf.org/html/rfc6265#section-4.1.1
 // cookie-value      = *cookie-octet / ( DQUOTE *cookie-octet DQUOTE )
 // cookie-octet      = %x21 / %x23-2B / %x2D-3A / %x3C-5B / %x5D-7E
-//           ; US-ASCII characters excluding CTLs,
-//           ; whitespace DQUOTE, comma, semicolon,
-//           ; and backslash
+//
+//	; US-ASCII characters excluding CTLs,
+//	; whitespace DQUOTE, comma, semicolon,
+//	; and backslash
+//
 // We loosen this as spaces and commas are common in cookie Values
 // but we produce a quoted cookie-value if and only if v contains
 // commas or spaces.
@@ -392,14 +393,14 @@ func validCookiePathByte(b byte) bool {
 
 func sanitizeOrWarn(fieldName string, valid func(byte) bool, v string) string {
 	ok := true
-	for i := 0; i < len(v); i++ {
-		if valid(v[i]) {
-			continue
-		}
-		log.Printf("net/http: invalid byte %q in %s; dropping invalid bytes", v[i], fieldName)
-		ok = false
-		break
-	}
+	//for i := 0; i < len(v); i++ {
+	//	if valid(v[i]) {
+	//		continue
+	//	}
+	//	log.Printf("net/http: invalid byte %q in %s; dropping invalid bytes", v[i], fieldName)
+	//	ok = false
+	//	break
+	//}
 	if ok {
 		return v
 	}
