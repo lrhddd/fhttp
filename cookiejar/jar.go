@@ -94,7 +94,7 @@ type entry struct {
 	Value      string
 	Domain     string
 	Path       string
-	SameSite   string
+	SameSite   http.SameSite
 	Secure     bool
 	HttpOnly   bool
 	Persistent bool
@@ -218,7 +218,7 @@ func (j *Jar) cookies(u *url.URL, now time.Time) (cookies []*http.Cookie) {
 		return s[i].seqNum < s[j].seqNum
 	})
 	for _, e := range selected {
-		cookies = append(cookies, &http.Cookie{Name: e.Name, Value: e.Value, Path: e.Path, HttpOnly: e.HttpOnly, Domain: e.Domain, Expires: e.Expires, Secure: e.Secure})
+		cookies = append(cookies, &http.Cookie{Name: e.Name, Value: e.Value, Path: e.Path, HttpOnly: e.HttpOnly, Domain: e.Domain, Expires: e.Expires, Secure: e.Secure, SameSite: e.SameSite})
 	}
 
 	return cookies
@@ -419,15 +419,15 @@ func (j *Jar) newEntry(c *http.Cookie, now time.Time, defPath, host string) (e e
 	e.Value = c.Value
 	e.Secure = c.Secure
 	e.HttpOnly = c.HttpOnly
-
-	switch c.SameSite {
-	case http.SameSiteDefaultMode:
-		e.SameSite = "SameSite"
-	case http.SameSiteStrictMode:
-		e.SameSite = "SameSite=Strict"
-	case http.SameSiteLaxMode:
-		e.SameSite = "SameSite=Lax"
-	}
+	e.SameSite = c.SameSite
+	//switch c.SameSite {
+	//case http.SameSiteDefaultMode:
+	//	e.SameSite = "SameSite"
+	//case http.SameSiteStrictMode:
+	//	e.SameSite = "SameSite=Strict"
+	//case http.SameSiteLaxMode:
+	//	e.SameSite = "SameSite=Lax"
+	//}
 
 	return e, false, nil
 }
